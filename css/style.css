@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(12, 12, 12);
+    color: #ffff;
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 48px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+progress{
+    margin: 0px 48px;
+    border: none;
+}
+
+#res{
+    height: 66px;
+    background-color: rgb(34, 34, 34);
+    padding: 20px;
+    margin: 0px 48px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    font-size: 22px;
+}
+
+button{
+    margin: 0px 48px 48px;
+    padding: 8px 24px;
+    border: 1px solid #ffff;
+    background: transparent;
+    color: #ffff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+button:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+form{
+    background-color: rgb(34, 34, 34);
+    padding-bottom: 20px;
+    margin: 0px 48px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.form-ponts{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(34, 34, 34);
+    margin: 0px 48px;
+}
+
+input{
+    margin-top: 20px;
+    width: 300px;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid #0000;
+    outline: none;
+    color: #ffff;
+    text-align: center;
+}
+
+input:enabled{
+    background: black;
+}
+
+#spin{
+    width: 200px;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 40px;
+    animation: zoom 2s;
+}
+
+
+@keyframes zoom {
+    0%{
+        transform: translateX(-50vw);
+    }
+    50%{
+        transform: translateX(50vw);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
