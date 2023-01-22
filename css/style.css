@@ -22,6 +22,7 @@ header{
 main{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 progress{
@@ -91,4 +92,32 @@ input{
 
 input:enabled{
     background: rgb(22, 22, 22);
+}
+
+#end-game{
+    width: 100%;
+    position: absolute;
+    background: rgb(12, 12, 12);
+    padding: 110px;
+    text-align: center;
+    justify-content: center;
+}
+
+#end-game h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#end-game p{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.drop-box{
+    display: none;
+}
+
+#button-end-game{
+    display: flex;
+    flex-direction: column;
 }
