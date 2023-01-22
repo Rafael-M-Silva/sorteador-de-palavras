@@ -4,30 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorteador</title>
+    <title>Dedos Ágeis</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-      <h1>Gerador de palavras</h1>
+      <h1>Dedos ágeis</h1>
     </header>
 
     <main>
       <button id="button">Iniciar</button>
       <div id="res">...</div>
-      <progress id="progress" value="0" max="100"></progress>
+      <progress id="progress" value="0" max="60"></progress>
       <div>
         <form>
           <input type="text" name="words-sort" id="words-sort" required>
-          
         </form>
-      </div>
-
-      <button id="spin">
-        <div>
-          +
+        <div id="temp">
+          <div class="auto" id="stopwatch"></div>
         </div>
-      </button>
+      </div>
     </main>
 
     <script src="js/script.js"></script>
